@@ -1,0 +1,25 @@
+{
+  "name": "defi-lending-platform",
+  "version": "1.0.0",
+  "description": "A simple DeFi lending platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx hardhat test",
+    "compile": "npx hardhat compile",
+    "deploy": "npx hardhat run scripts/deploy.js --network localhost",
+    "update-config": "npx hardhat run scripts/updateConfig.js",
+    "prepare-frontend": "npm run compile && npm run deploy && npm run update-config"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.5.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.5",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "chai": "^4.3.6",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.6.1",
+    "hardhat": "^2.9.1"
+  }
+}

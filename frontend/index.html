@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeFi Lending Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>DeFi Lending Platform</h1>
+        <div id="wallet-actions">
+            <button id="connectWallet">Connect Wallet</button>
+            <button id="switchAccount">Switch Account</button>
+        </div>
+        <div id="account"></div>
+        <div id="tokenBalance"></div>
+        <div id="balance"></div>
+        <div id="borrowBalance"></div>
+        <div class="actions">
+            <h2>Actions</h2>
+            <div>
+                <input type="number" id="depositAmount" placeholder="Amount to deposit">
+                <button onclick="deposit()">Deposit</button>
+            </div>
+            <div>
+                <input type="number" id="withdrawAmount" placeholder="Amount to withdraw">
+                <button onclick="withdraw()">Withdraw</button>
+            </div>
+            <div>
+                <input type="number" id="borrowAmount" placeholder="Amount to borrow">
+                <button onclick="borrow()">Borrow</button>
+            </div>
+            <div>
+                <input type="number" id="repayAmount" placeholder="Amount to repay">
+                <button onclick="repay()">Repay</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.ethers.io/lib/ethers-5.0.umd.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
